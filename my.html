@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://scontent.fcok7-1.fna.fbcdn.net/v/t1.0-9/p960x960/60237456_2231393560278894_8378904638086184960_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=ChHhiir3BgIAX_OMNfh&_nc_ht=scontent.fcok7-1.fna&_nc_tp=6&oh=a20167bb37cdedad02ed8c256dab4238&oe=5ED1904D">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="bg">
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .bg {
+          /* The image used */
+          background-image: url("https://fullyloaded.pizza/wp-content/uploads/2016/08/2brown-wood-texture-and-background-1170x780.jpg");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+        <section >
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-md-4">
+
+                    </div>
+                    <div  class="col-md-8 pl-4">
+    <div style="margin-top: 200px;" >
+
+        <tr> 
+            <td>
+                <h5 style="color:tomato" >USER NAME</h5>
+            </td>
+
+            <td>
+                <input  type="text" id="username">
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <h5 style="color:tomato">PASSWORD</h5>
+            </td>
+
+            <td>
+                <input type="password" id="password">
+            </td>
+
+        </tr>
+
+        <tr >
+            <td>
+
+            </td>
+            <td >
+                <br>
+                <br>
+                <button class="btn btn-primary " style="margin-left: 110px;" onclick="first()" id="submit" >LOGIN</button>
+            </td>
+            
+        </tr>
+    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    <script>
+        var attempt=3;
+        function first(){
+            
+if (document.getElementById("username").value =='subin' && document.getElementById("password").value =="subin123")
+{
+    alert("Welcome Subin");
+    window.open("https://github.com/subinscariya/Subin-/releases/download/subin/index.html", "_self");
+    
+}
+else 
+{
+    
+    attempt--;
+    alert("Wrong "+attempt+" Attempts Remaining");
+}
+if( attempt == 0){
+    alert(" Your account has been disabled")
+document.getElementById("username").disabled = true;
+document.getElementById("password").disabled = true;
+document.getElementById("submit").disabled = true;
+return false;
+}
+}
+    
+    </script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAAHj4JOcJ2FSf0c2AOgpgavYA-1OtpLM",
+    authDomain: "subinscariya-e98a7.firebaseapp.com",
+    databaseURL: "https://subinscariya-e98a7.firebaseio.com",
+    projectId: "subinscariya-e98a7",
+    storageBucket: "subinscariya-e98a7.appspot.com",
+    messagingSenderId: "457902132883",
+    appId: "1:457902132883:web:4caa3a5294fa612282c766",
+    measurementId: "G-ZRV70BEFCJ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
